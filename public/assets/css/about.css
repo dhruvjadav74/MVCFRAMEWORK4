@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+body { font-family: 'Roboto', sans-serif;}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.res {
+    width: 75%;
+    margin: auto;
+}
+
+.header1 {
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(82, 82, 82);
+}
+
+.menu1 li {
+    margin: 10px;
+}
+
+.feed {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    margin: 4vh;
+}
+
+.imgcont {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.line {
+    position: relative;
+    width: 25px;
+    height: 24px;
+    margin: auto;
+}
+
+.line img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.line::before {
+    width: 150%;
+    padding: 1px 0;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: lightgray;
+    transform: translateX(-110%);
+    z-index: 5;
+}
+
+.line::after {
+    width: 150%;
+    padding: 1px 0;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: lightgray;
+    transform: translateX(80%);
+    z-index: 5;
+}
+.cab{
+	font-size: 16px;
+	font-family: Roboto;
+}
+.Lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-Aenea {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--brownish-grey);
+}
+.Our-Story {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4f4f4f;
+}
+.A-Few-words-about-us {
+
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4f4f4f;
+}
+
+/*
+footer
+*/
+.footer{
+  background-color: #111111;
+  padding-top: 5px;
+
+}
+.footer ul{
+  margin-top: 1rem;
+}
+.footer ul li a{
+  font-size: 14px;
+}
+
+.social-media{
+  text-align: center;
+  display: flex;
+  margin: auto;
+}
+  ul{
+  margin: 0px;
+}
+ul li{
+  list-style: none;
+  display: inline-block;
+
+
+}
+ul li a {
+color :  #fff;
+padding :  15px 17px;
+font-size: 17px;
+font-weight: normal;
+
+}
+

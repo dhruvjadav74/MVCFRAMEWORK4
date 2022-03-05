@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+     margin: 0;
+     padding: 0;
+ }
+
+ body{
+     overflow-x: hidden;
+ }
+
+ .Rectangle{
+     background-color: #525252;
+     
+ }
+
+ .home{
+     background-image: url(http://localhost/MVCFramework/public/assets/Images/homepage/bg.jpg);
+     width: auto;
+     height: auto;
+   }
+ 
+
+ .navbar-nav > li{
+     margin-left:10px;
+     margin-right:10px;
+   }
+
+ .border{
+     border-radius: 20px;
+     /* background-color: #29626D; */
+     width: 111px;
+     height: 40px;
+ }
+
+ .br1{
+   width: 83px;
+ }
+
+ .br2{
+   width: 161px; 
+ }
+
+.ab{
+ margin-bottom: 6%;
+}
+.Register-Now {
+ font-family: Roboto;
+ font-size: 24px;
+ margin-top: 5%;
+ font-weight: bold;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.17;
+ letter-spacing: normal;
+ text-align: center;
+ color: #4f4f4f;
+}
+/*
+text
+*/
+.Lorem-ipsum-text {
+ margin-top: 190px;
+ font-family: Roboto;
+ font-size: 50px;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.08;
+ letter-spacing: normal;
+ text-align: left;
+ color: white;
+}
+.Lorem-ipsum-dolor-sit-amet-consectetur-adipiscing {
+
+ font-family: Roboto;
+ font-size: 16px;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.38;
+ letter-spacing: normal;
+ text-align: left;
+ color: white;
+}
+.Rounded-Rectangle-6-copy-4 {
+ width: 225px;
+ height: 54px;
+ opacity: 0.6;
+ text-align: center;
+ border-radius: 27px;
+ background-color: #006072;
+}
+.Lets-Book-a-Cleaner-copy {
+ width: 161px;
+ height: 14px;
+ font-family: Roboto;
+ font-size: 18px;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.33;
+ letter-spacing: normal;
+ text-align: right;
+ color:white;
+}
+.Enter-your-postcode {
+
+ font-family: Roboto;
+ font-size: 20px;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.2;
+ letter-spacing: normal;
+ text-align: center;
+ color: white;
+}
+.write {
+ width: 52px;
+ height: 55px;
+ object-fit: contain;
+ background-color: var(--white);
+}
+.Experience-Vetted-Professionals {
+ width: 200px;
+ height: 59px;
+ margin-top: 20px;
+ font-family: Roboto;
+ font-size: 30px;
+ font-weight: bold;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: center;
+ color: #565656;
+}
+.dedicated-helper {
+ width: 319.5px;
+ height: 319.5px;
+ margin-bottom: 38.5px;
+}
+.Lorem-ipsum-dolor-sit-amet-consectetur {
+ width: 376px;
+ height: 59px;
+ margin: 104px 27px 18px 47px;
+ font-family: Roboto;
+ font-size: 30px;
+ font-weight: bold;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.2;
+ letter-spacing: normal;
+ text-align: left;
+ color: #4f4f4f;
+}
+
+.container-fluid .row
+{
+ --bs-gutter-x:0px;
+ justify-content:center;
+ align-items:center;
+ 
+}
+.container-fluid .row .col-md-3
+{
+ max-width:357px;
+ min-height: 367px;
+ border-radius: 4px;
+ box-shadow: 0 0 30px 0 #e4ebf0;
+ background-color: #fff;
+ margin:auto 22.5px 45px;
+}
+.blog_card
+{
+ padding: 0;
+}
+.blog-title
+{
+ margin: 15px 71px 66px 127px;
+ font-family: Roboto;
+ font-size: 40px;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ font-weight: bold;
+ color: #4f4f4f;
+ text-align:center;
+} .blog_card img
+{
+ width: 357px;
+ height: 164px;
+ object-fit: contain;
+}
+.blog_card .card_title
+{
+ width:100%;
+ margin: 20px 91px 7px 20px;
+ font-family: Roboto;
+ font-size: 20px;
+ font-weight: bold;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.2;
+ letter-spacing: normal;
+ text-align: left;
+ color: #3d4046;
+}
+.blog_card .card-date
+{
+ width: 100%;
+ height: 12px;
+ margin: 0 23px 14px 19px;
+ font-family: Roboto;
+ font-size: 13px;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: left;
+ color: #a3a3a3;
+}
+.blog_card .card-desc
+{
+ width: 287px;
+ height: 59px;
+ margin: 0 49px 27px 21px;
+ font-family: Roboto;
+ font-size: 16px;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.38;
+ letter-spacing: normal;
+ text-align: left;
+ color: #565656;
+}
+.blog_card .read-post
+{
+ width: 110px;
+ height: 14px;
+ margin: 27px 11px 31px 20px;
+ font-family: Roboto;
+ font-size: 18px;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: left;
+ color: #4f4f4f;
+}
+.blog_card .arrow
+{
+ width: 29px;
+ height: 10px;
+ color: #4f4f4f;
+}
+
+.customer-say 
+{
+ width: 100%;
+ padding: 65px 0 0;
+ background-color: #f4f5f8;
+  margin: 43px 0 0;
+}
+.customer-title
+{
+ height: 38px;
+ margin-bottom:59px;
+ font-family: Roboto;
+ font-size: 40px;
+ font-weight: bold;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: center;
+ color: #4f4f4f;
+}
+.row
+{
+ --bs-gutter-x:0px;
+ justify-content:center;
+ align-items:center;
+ 
+}.row .col-md-3
+{
+ max-width:357px;
+ 
+}
+.customer-card
+{
+  width: 357px;
+ height: 370px;
+ padding: 0 19px 0 0;
+ border-radius: 4px;
+ box-shadow: 0 0 30px 0 #e4ebf0;
+ background-color: #ffffff;
+ margin:auto 22.5px 43px;
+ border-left:3px solid #1d7a8c;
+} 
+.customer-card .card-head
+{
+ width:357px;
+ display:flex;
+ position:relative;
+}
+.customer-card .card-head .customer-img
+{
+ width: 70px;
+ height: 70px;
+ margin: 43px 18px 0px 35px;
+ padding: 4px 0 0;
+ object-fit: contain;
+}
+.customer-card .card-head .customer-details
+{
+ margin: 60px 67px 8px 1px;
+}
+.customer-card .card-head .customer-name
+{
+ width: 110px;
+ height: 18px;
+ font-family: Roboto;
+ font-size: 20px;
+ font-weight: bold;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.2;
+ letter-spacing: normal;
+ text-align: right;
+ color: #4f4f4f;
+}
+.customer-card .card-head .Manchester
+{
+ width: 74px;
+ height: 11px;
+ font-family: Roboto;
+ font-size: 14px;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.71;
+ letter-spacing: normal;
+ text-align: right;
+ color: #8e8e8e;
+}
+.customer-card .card-head .message-img
+{
+ position:absolute;
+  width: 35px;
+ height: 36px;
+ top:20px;
+ left:303px;
+}
+.customer-card .customer-feedback
+{
+ width:auto;
+ height:auto;
+ margin: 27px 11px 30px 36px;
+ font-family: Roboto;
+ font-size: 16px;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.38;
+ letter-spacing: normal;
+ text-align: left;
+ color: #565656;
+}
+.customer-card .read-more
+{
+ width: 85px;
+ height: 14px;
+ margin: 30px 1px 40px 37px;
+ font-family: Roboto;
+ font-size: 18px;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.11;
+ letter-spacing: normal;
+ text-align: left;
+ color: #565656;
+}
+.customer-card .arrow
+{
+ width: 29px;
+ height: 9px;
+ color: #4f4f4f;
+}
+
+/*
+under
+*/
+.How-it-works {
+ font-family: Roboto;
+ font-weight: bold;
+ font-stretch: normal;
+ font-style: normal;
+ font-size: 40px;
+ letter-spacing: normal;
+ color: #4f4f4f;
+}
+.first-section{
+ background-image: url(http://localhost/MVCFramework/public/assets/Images/homepage/blog-left-bg.png), url(http://localhost/MVCFramework/public/assets/Images/homepage/blog-right-bg.png);
+ background-position: left, right;
+ background-repeat: no-repeat, no-repeat;
+}
+.first{
+ width:60%;
+ margin-left: 20%;
+}
+ .title1 {
+ font-family: Roboto;
+ text-align: center;
+ margin-top: 60px;
+ margin-bottom: 73px;
+ font-size: 40px;
+ font-weight: bold;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 0.45;
+ letter-spacing: normal;
+ text-align: center;
+ color: #4f4f4f;
+}
+
+.rr{
+ margin-bottom: 20px;
+}
+
+.head1{
+ font-size: 30px;
+ margin-top: 35px;
+ color: #4f4f4f;
+ font-weight: 500;
+}
+.para{
+ margin-top: 16px;
+ margin-bottom: 48px;
+ font-size: 18px;
+ color: #4f4f4f;
+ 
+ 
+}
+.work-link a{
+ text-decoration: none;
+ font-size: 18px;
+ color: black;
+}
+.work-link a img{
+ width:29px;
+ height:9px ;
+ 
+}
+
+.footer{
+ background-color: #111111;
+ padding-top: 5px;
+
+}
+.footer ul{
+ margin-top: 1rem;
+}
+.footer ul li a{
+ font-size: 14px;
+}
+
+.social-media{
+ text-align: center;
+ display: flex;
+ margin: auto;
+}
+ ul{
+ margin: 0px;
+}
+ul li{
+ list-style: none;
+ display: inline-block;
+
+
+}
+ul li a {
+color :  #fff;
+padding :  15px 17px;
+font-size: 17px;
+font-weight: normal;
+
+}
