@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 * {
     padding: 0;
     margin: 0;
@@ -156,6 +156,12 @@ table
   }
 
 .hat{
+  padding: 18px 14px;
+  border: solid 1px #aaa;
+  border-radius: 35px;
+  background-color: white;
+}
+.hat1{
   padding: 8px 4px;
   border: solid 1px #aaa;
   border-radius: 25px;
@@ -245,67 +251,140 @@ table
     background-color: #6f42c1;
     border-color: #643ab0;
 }
-.modal-body div{float:left; width: 100%}
-.modal-body div p{float:left; width: 20%; font-weight: 600;}
-.modal-body div span{float:left; width: 80%}
-.mycard {
-  max-width: 50rem;
-  padding: 0;
-  border: none;
-  border-radius: 0.5rem
+
+.modal-body div p{float:left;font-weight: 600;}
+
+hr {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+
+.rating1 { 
+  border: none;
+  float: left;
+}
+
+.rating1 > input { display: none; } 
+.rating1 > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating1 > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating1 > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating1 > input:checked ~ label, /* show gold star when clicked */
+.rating1:not(:checked) > label:hover, /* hover current star */
+.rating1:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating1 > input:checked + label:hover, /* hover current star when changing rating */
+.rating1 > input:checked ~ label:hover,
+.rating1 > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating1 > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+
+
+.rating2 { 
+  border: none;
+  float: left;
+}
+
+.rating2 > input { display: none; } 
+.rating2 > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating2 > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating2 > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating2 > input:checked ~ label, /* show gold star when clicked */
+.rating2:not(:checked) > label:hover, /* hover current star */
+.rating2:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating2 > input:checked + label:hover, /* hover current star when changing rating */
+.rating2 > input:checked ~ label:hover,
+.rating2 > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating2 > input:checked ~ label:hover ~ label { color: #FFED85;  } 
 
 a.active {
-  border-bottom: 2px solid #55c57a
+    border-bottom: 2px solid #55c57a
 }
 
-.nav-link {
-  color: rgb(110, 110, 110);
-  font-weight: 500
-}
 
-.nav-link:hover {
-  color: green;
-}
 
-.nav-pills .nav-link.active {
-  color: black;
-  background-color: white;
-  border-radius: 0.5rem 0.5rem 0 0;
-  font-weight: 600
-}
-
-.tab-content {
-  padding-bottom: 1.3rem
-}
-
-.form-control {
-  background-color: rgb(241, 243, 247);
-  border: none
-}
-
-span {
-  margin-left: 0.5rem;
-  padding: 1px 10px;
-  color: white;
-  background-color: rgb(143, 143, 143);
-  border-radius: 4px;
-  font-weight: 600
-}
-
-.third {
-  padding: 0 1.5rem 0 1.5rem
-}
-
-label {
-  font-weight: 500;
-  color: rgb(104, 104, 104)
-}
-
-.btn-success {
-  float: right
-}
-
-.form-control:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 7px rgba(0, 0, 0, 0.2)
+.nav-pills1 .nav-link1.active {
+    color: black;
+    background-color: white;
+    border-radius: 0.5rem 0.5rem 0 0;
+    font-weight: 600
 }

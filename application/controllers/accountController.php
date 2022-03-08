@@ -257,5 +257,46 @@ class accountController extends framework {
                                         }
                                     }
 
+                                    public function fetchuseraddressdata(){
+                                        $accountModel= $this->model('accountModel');
+                                        $address=$_POST['address'];
+                                        if($accountModel->addressdetails1($address)){
+                                          
+                                        }
+                                       
+                                    }
+                                    public function edit(){
+                                        $accountModel= $this->model('accountModel');
+                                        $add=$_POST['add'];
+                                        $ch_address=$_POST['ch_address'];
+                                     $ch_address1=$_POST['ch_address1'];
+                                         $ch_po=$_POST['ch_po'];
+                                      $ch_ci=$_POST['ch_ci'];
+                                       $ch_mo=$_POST['ch_mo'];
+                                        if($accountModel->editadd($add,$ch_address,$ch_address1,$ch_po,$ch_ci,$ch_mo)){
+                                          
+                                        }
+                                       
+                                    }
+
+
+                                    public function delete_address(){
+                                        $accountModel= $this->model('accountModel');
+                                        $addressdeleted=$_POST['addressdeleted'];
+                                        if($accountModel->addressdelete($addressdeleted)){
+                                          
+                                        }
+                                    }
+
+                                    public function change_pass(){
+                                        $accountModel= $this->model('accountModel');
+                                        $oldpass=$_POST['oldpass'];
+                                        $newpass=$_POST['newpass'];
+                                        $id = $_POST['id'];
+                                        if($accountModel->ch_pass($oldpass,$newpass,$id)){
+                                          
+                                        }
+                                    }
+
         }
 ?>

@@ -827,7 +827,7 @@ $(document).ready(function(){
 
      $('.serr').click(function(){
          servicebtn=$(this).val();
-        
+         $(this).css('background-color', 'green');
          
      })
      

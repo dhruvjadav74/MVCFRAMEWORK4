@@ -10,7 +10,7 @@
                     <a class="nav-link border br2 text-center" style="color:white;" href="<?php echo BASEURL; ?>/accountController/Service_Book">Book a Cleaner</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" style="color:white;"href="<?php echo BASEURL; ?>/accountController/User_dashboard">Prices</a>
+                    <a class="nav-link" style="color:white;"href="<?php echo BASEURL; ?>/accountController/pricesPage">Prices</a>
                   </li>
                   
                   <li class="nav-item">

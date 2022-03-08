@@ -10,10 +10,9 @@
             </button>
                     <div class="collapse navbar-collapse menu1" id="collapsenavbar">
                         <ul class="navbar-nav ml-auto text-center">
-                            <li class="nav-item"><a href="<?php echo BASEURL; ?>/accountController/Service_book">
+                            <li class="nav-item">
                                 <Button value="" style="background-color: rgba(0, 96, 114, 0.5);border-radius: 20px;border: 1px solid rgba(255, 255, 255, 0.5);height: 40px;width: 100px; color: aliceblue;">Book now</Button>
-</a>                      
-                                </li>
+                            </li>
                             <li class="nav-item">
                                 <Button value="" style="background-color: rgb(82, 82, 82);border-radius: 20px;border: 1px solid rgba(255, 255, 255, 0.5);height: 40px;width: 161px; color: aliceblue;">Prices & services</Button>
                             </li>
@@ -27,11 +26,13 @@
                                 <a href="<?php echo BASEURL; ?>/accountController/contactUs" class="nav-link text-white"><span>Contact</span></a>
                             </li>
                             <li class="nav-item">
-                            <div class="btn" style="border-radius: 20px;border: 1px solid rgba(255, 255, 255, 0.5);">
-                                    <a style="color:white;"href="http://localhost/MVCFramework/accountController/logout">logout</a>
-                          </div></li>
+                            <img src="<?=ROOT?>/assets/Images/service/icon-notification.png" class="img-fluid" alt="Responsive image" style="padding-left: 5px;padding-right: 5px;">
+                          
+                            </li>
                             <li class="nav-item">
-                                <Button value="" style="background-color: rgba(0, 96, 114, 0.5);border-radius: 20px;border: 1px solid rgba(255, 255, 255, 0.5);height: 40px;width: 140px; color: aliceblue;">Become a helper</Button>
+                                
+                            <img src="<?=ROOT?>/assets/Images/service/forma-2.png" class="img-fluid" alt="Responsive image">
+                                 <img src="<?=ROOT?>/assets/Images/service/forma-1-copy.png" class="img-fluid" alt="Responsive image">
                             </li>
                         </ul>
                     </div>

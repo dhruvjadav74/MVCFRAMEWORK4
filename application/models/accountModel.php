@@ -573,6 +573,114 @@ echo json_encode($cust);
 
             }
 
+            public function addressdetails1($address){
+                $host='localhost';
+                $username='root';
+                $password='';
+                $dbname = "company";
+                $conn=mysqli_connect($host,$username,$password,"$dbname");
+                if(!$conn)
+                {
+                die('Could not Connect MySql Server:' .mysql_error());
+                }
+                $address = $_POST['address'];
+                $query="select * from useraddress where AddressLine1='$address'";
+                $result = mysqli_query($conn,$query);
+                $cust = mysqli_fetch_array($result);
+                if($cust) {
+                echo json_encode($cust);
+                }
+            }
+
+            public function editadd($add,$ch_address,$ch_address1,$ch_po,$ch_ci,$ch_mo){
+                $add=$_POST['add'];
+                $ch_address=$_POST['ch_address'];
+                $ch_address1=$_POST['ch_address1'];
+                    $ch_po=$_POST['ch_po'];
+                 $ch_ci=$_POST['ch_ci'];
+                  $ch_mo=$_POST['ch_mo'];
+                  $host='localhost';
+                  $username='root';
+                  $password='';
+                  $dbname = "company";
+                  $conn=mysqli_connect($host,$username,$password,"$dbname");
+                  if(!$conn)
+                  {
+                  die('Could not Connect MySql Server:' .mysql_error());
+                  }
+                  $updatequery="update useraddress set AddressLine1='$ch_address',AddressLine2='$ch_address1',City='$ch_ci',Mobile='$ch_mo',Postalcode='$ch_po'  where AddressId='$add'";
+                  $result = mysqli_query($conn,$updatequery);
+                  if($result){
+                      echo "success";
+                  }
+            
+            
+            
+            }
+
+            public function addressdelete($addressdeleted){
+                $addressdeleted=$_POST['addressdeleted'];
+                $host='localhost';
+                $username='root';
+                $password='';
+                $dbname = "company";
+                $conn=mysqli_connect($host,$username,$password,"$dbname");
+                if(!$conn)
+                {
+                die('Could not Connect MySql Server:' .mysql_error());
+                }
+                $deletequery="DELETE FROM useraddress WHERE AddressLine1='$addressdeleted'";
+                $result = mysqli_query($conn,$deletequery);
+                if($result){
+                    echo "success";
+                }
+
+
+
+
+            }
+
+            public function ch_pass($oldpass,$newpass,$id){
+                $id = $_POST['id'];
+                $oldpass=$_POST['oldpass'];
+                $newpass=$_POST['newpass'];
+                $pass=password_hash($newpass,PASSWORD_BCRYPT);
+
+                $host='localhost';
+                $username='root';
+                $password='';
+                $dbname = "company";
+                $con=mysqli_connect($host,$username,$password,"$dbname");
+                
+                $email_search="select * from registration where user_id='$id'";
+                $query=mysqli_query($con,$email_search);
+                $pass_count=mysqli_num_rows($query);
+                if($pass_count){
+                    $email_pass= mysqli_fetch_assoc($query);
+                    $dbpass=$email_pass['password'];
+                    $pass_decode=password_verify($oldpass,$dbpass);
+        
+                         if($pass_decode){
+                             $updatequery="update registration set password='$pass' where user_id='$id'";
+                $iquery=mysqli_query($con,$updatequery);
+                if($iquery){
+                    echo "success";
+                } 
+                          }
+                          else{
+                              echo "failed";
+                          }
+                
+                }
+                
+
+            }
+
+
+
+
+
+
                 }
                 
 
